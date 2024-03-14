@@ -1,0 +1,638 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* rgb(146, 145, 145); Pick This grey color */
+
+
+body::-webkit-scrollbar{   /* To hide scrollbar from right. Did it from chat gpt */
+    display: none;
+}
+
+
+img{
+    cursor: pointer;   /* Will make the curson pointer type(hand vala) of every image*/
+}
+
+
+body{
+    overflow-x:hidden;
+}
+
+/* Navigation */
+
+
+#Navigation_div1{
+    padding-bottom: 50px;
+    background-color: rgb(255, 245, 245);
+}
+
+#backimage{
+    width: 100.1%;
+    /* height: 350px; */
+
+}
+
+#Navigation_div1 img{
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+}
+#Navigation_div1 img:hover{
+    transform: scale(1.1); 
+}
+
+#Navigation_div2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    position:absolute ;
+    top: 3px;
+    left: 0;
+    right: 0;
+}
+.navbar_div1{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.navbar_div1 a{
+    text-decoration: none;
+    color: white;
+} 
+
+.navbar_div2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_div2 a{
+    text-decoration: none;
+    color: rgb(247, 240, 240);
+}
+
+.navbar_div2 a:hover{
+    color: rgb(92, 83, 226);
+}
+
+#Logo_SS{
+    height: 70px;
+    width: 100px;
+    
+}
+
+.postproperty_button{
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(247, 240, 240);
+}
+
+.postproperty_button:hover{
+    color: white;
+    background-color: rgb(92, 83, 226);
+}
+
+#navicon{
+    color: rgb(247, 240, 240);
+    font-size: 23px;
+}
+#navicon:hover{
+    color: rgb(92, 83, 226);
+}
+
+
+ /* START OF AT HOVER ON FOR BUYERS  */
+
+
+.for_buyers_hover{
+    display: none;   /* Initially hide the content */
+    justify-content: space-between;
+    background-color:rgb(249, 245, 245);
+    padding:2%;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    z-index: 1;
+    transition: 0.5s ease-in-out; /* Transition for opacity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+
+.for_buyers:hover + .for_buyers_hover, .for_buyers_hover:hover {
+    display: flex; /* Display when hovering over .for_buyers or .for_buyers_hover */
+    /* opacity: 1; */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Adjusted box shadow on hover */
+}
+
+.buyers_1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.buyers_1_heading{
+    color: rgb(130, 127, 127);
+    font-size:14px;
+}
+#insight_image{
+    height: 170px;
+    width: 170px;
+    border-radius: 30px;
+}
+
+
+
+  /* END OF AT HOVER ON FOR BUYERS  */
+
+
+
+#searchbar{
+    background-color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-54.5%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px  rgb(52, 51, 51);
+    
+}
+
+.searchbar_1{
+    height: 60px;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchbar_1 a{
+    color: rgb(116, 107, 107);
+    text-decoration: none;
+}
+
+.searchbar_1 a:hover{
+    color: black;
+}
+#searching{
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    text-align:center;
+}
+
+#searchingicon{
+    position: absolute;
+    left: 27%; /* Adjust icon position */
+    transform: translateY(-50%); 
+}
+
+#searchbar_2_div_change{
+    color:rgb(116, 107, 107);
+}
+
+.vertical-hr {
+    height: 61px; /* Set the desired height of the vertical line */
+    width: 1px; /* Set the width of the vertical line */
+    background-color: rgb(116, 107, 107); /* Set the color of the vertical line */
+    
+}  
+
+.searchbar_2{
+    height: 60px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchbutton{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(61, 116, 233);
+}
+.searchbutton:hover{
+    background-color: rgb(23, 90, 234);
+}
+
+.searchicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 215, 250);
+    color: rgb(39, 39, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Payments */
+
+#PaymentMethod{
+    background-color: rgb(255, 245, 245);
+    padding: 50px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+#PaymentMethod_1{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 40px;
+}
+
+#but{
+    height: 35px;
+    width: 110px;
+    border: solid 1px blue;
+    border-radius: 6px;
+    color: rgb(0, 0, 255);
+}
+
+#but:hover{
+    background-color: rgb(189, 216, 237);
+    color: rgb(24, 22, 22);
+    
+}
+
+#but a{
+    text-decoration: none;
+    
+}
+
+
+#divsofpayment{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.payments{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 110px;
+    width: 170px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px  rgb(203, 199, 199);
+}
+
+.payments:hover{
+    box-shadow: 0px 0px 20px  rgb(157, 150, 150);
+}
+
+.payments p{
+    font-size: 14px;
+    color: rgb(72, 70, 70);
+}
+
+.payments img{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+/* commercial buying */
+
+.mainarticle{
+    margin: 30px;
+}
+
+
+#article_div1{
+    display: flex;
+    justify-content:space-between ;
+    margin: 20px;
+   
+}
+#article_head{
+    color: rgba(13, 105, 210, 0.765);
+    text-decoration: none;
+}
+#article_div2{
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+.div2-head {
+    color: grey;
+    text-decoration: none;
+    
+}
+
+.div2-head:hover {
+    color: black;
+    text-decoration: dotted;
+}
+
+#mainarticle_images{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+.article-div3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article_image{
+    height: 160px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 3%;
+}
+.article_image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px  rgb(157, 150, 150);
+}
+
+.tax_subtitle{
+
+    font-weight: 550;
+
+}
+
+.tax_para{
+    font-size: 13px;
+    color: rgb(146, 145, 145);;
+}
+
+
+#main_register{
+    padding: 3rem;
+    line-height: 50px;
+}
+
+.register{
+    background-color: rgba(247, 251, 165, 0.139);
+    padding: 3rem;
+    display: flex;
+    gap: 10rem;
+    border-radius: 12px;
+}
+
+.register div h5{
+    color: rgb(146, 145, 145);
+}
+
+.NumbersInLakhs{
+    display: flex;
+    gap: 30px;
+
+}
+.NumbersInLakhs h4{
+    font-size: 40px;
+    font-weight: 500;
+}
+.NumbersInLakhs p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#malefemalelaptop_img{
+    border-radius: 10px;
+    height: 26rem;
+    width: 29rem;
+}
+
+
+
+.Button_Post{
+    padding-top: 50px;
+}
+
+.Post {
+    height: 50px;
+    width: 250px;
+    background-color: rgb(89, 89, 249);
+    border: none;
+    border-radius: 5px;
+}
+
+.Post a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.Post_Para{
+    line-height: 50px;
+    font-size: small;
+}
+
+
+/* third last main */
+
+
+
+#exclusive_div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+#exclusive_head5{
+    color: rgb(146, 145, 145);
+}
+#image_exclusive{
+    height: 200px;
+    width: 300px;
+    padding-top: 40px;
+}
+
+
+
+/* second last  */
+
+
+#second_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+#second_div_head1{
+    color: rgb(146, 145, 145);
+}
+#second_div_head2{
+    font-size: 35px;
+}
+
+#main_heading_icon{
+    font-size: 30px;
+    color: rgb(65, 65, 255);
+    margin-bottom: 25px;
+}
+
+.main_heading_para{
+    font-size: medium;
+    color: rgb(146, 145, 145);
+}
+
+.main_second_Items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_heading_{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    gap: 10px;
+}
+
+
+
+.main_heading_2_1{
+    color: grey;
+}
+.para1{
+    color: grey;
+}
+
+
+
+
+                    /* Main end ki bari */
+
+
+
+.mainend{
+    /* margin: 4rem; */
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-bottom: 7rem;
+}
+                    
+#mainend_heading_1{
+    font-size: 14px;
+    color: rgb(132, 128, 128);
+}
+                    
+.mainend_images{                    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;                
+}                    
+                   
+.city-section {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    /* margin-bottom: 4rem; */
+    gap: 8px;
+}
+                    
+.city-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.city-image:hover{
+    transform: scale(1.1);   
+    box-shadow: 0px 0px 20px  rgb(163, 162, 162);
+}
+                    
+.city-info {
+    line-height: 2rem;
+    padding-left: 20px;
+}
+                    
+.city-head {
+    font-size: medium;
+}
+                    
+.city-subhead {
+    font-size: small;
+    color: grey;
+}
+
+
+
+
+
+                    /* Footer ki bari */      
+                    
+                
+
+#footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    justify-content: space-evenly;
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.anchor:hover{
+    color: blue;
+}
+
+.listnone{
+    color: white;
+    list-style: none;
+    line-height: 2.5rem;
+}
+#contact_head5{
+    color: grey;
+}
+
+.endicons{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 2rem;
+}
+
+.icons{
+    font-size: 22px;
+}
+.icons:hover{
+    color: blue;
+}
+
+.DownloadApps{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.Download_ShelterSeek{
+    height:50px;
+}
+
+#footerpara{
+    font-size: xx-small;
+}
